@@ -3,7 +3,7 @@ import React from "react";
 
 const EstimatedTime = () => {
 	return (
-		<div className="absolute h-[204.89px] w-[416.31px] bottom-0 left-[100px]">
+		<div className="absolute h-[204.89px] w-[416.31px] bottom-0 left-[6%] scale-50 md:scale-75 lg:scale-100">
 			<div className="h-full w-full relative ">
 				<Image
 					fill
