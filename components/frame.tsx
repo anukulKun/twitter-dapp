@@ -1,18 +1,15 @@
-import Image from "next/image";
 import type React from "react";
 
 const Frame = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div className="min-h-screen w-full relative">
 			<svg
-				width="760"
-				height="435"
 				viewBox="0 0 760 435"
 				fill="none"
+        preserveAspectRatio="none"
 				xmlns="http://www.w3.org/2000/svg"
-				className="absolute z-[1] w-full h-full scale-[1.04]"
+				className="absolute z-[1] w-full h-full p-2"
 			>
-				<title>hello world</title>
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"

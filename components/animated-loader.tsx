@@ -14,7 +14,7 @@ const AnimatedLoader: React.FC = () => {
   };
 
 	return (
-		<div className="absolute w-[386px] h-[203px] top-4 left-4">
+		<div className="absolute w-[386px] h-[203px] top-4 left-4 scale-50 md:scale-75 lg:scale-100">
 			<div className="relative h-full w-full">
 				<motion.span
 					className="top-[48px] text-neutral-500 absolute left-[145px] text-[7px]"
@@ -49,7 +49,6 @@ const AnimatedLoader: React.FC = () => {
 				animate="visible"
 				className="absolute top-0"
 			>
-				<title>loader</title>
 				{/* Main rectangle */}
 				<motion.path
 					d="M366.732 183.875H99.9937V65.969H366.732V183.875Z"

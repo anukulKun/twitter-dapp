@@ -3,7 +3,7 @@ import React from "react";
 
 const PrizeWrap = () => {
 	return (
-		<div className="absolute h-[204.89px] w-[416.31px] top-[71px] right-[74px]">
+		<div className="absolute h-[204.89px] w-[416.31px] top-[71px] right-[74px] scale-50 md:scale-75 lg:scale-100">
 			<div className="h-full w-full relative ">
 				<Image
 					fill

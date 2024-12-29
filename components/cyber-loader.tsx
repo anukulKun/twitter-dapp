@@ -27,7 +27,7 @@ const CyberLoader = () => {
 	};
 
 	return (
-		<div className="w-[275.14px] absolute aspect-square right-[132px] bottom-[200px]">
+		<div className="w-[275.14px] absolute aspect-square right-[132px] bottom-[200px] scale-50 md:scale-75 lg:scale-100">
 			<div className="h-full w-full relative">
 				{/* Outer disk container */}
 				<motion.div className="absolute inset-0" animate={rotateAnimation}>
