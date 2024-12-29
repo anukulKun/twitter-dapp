@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function RadarChart() {
 	return (
-		<div className="absolute top-1/2 -translate-y-1/2 left-[130px]">
+		<div className="absolute top-1/2 -translate-y-1/2 left-[130px] scale-50 md:scale-75 lg:scale-100">
 			<motion.svg
 				width="184"
 				height="180"
