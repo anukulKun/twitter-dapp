@@ -2,8 +2,17 @@
 
 import type React from "react";
 import { motion } from "motion/react";
+import ScrambleText from "./ui/scramble-text";
 
 const AnimatedLoader: React.FC = () => {
+  const textStaggerAnimation = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0
+    },
+  };
+
 	return (
 		<div className="absolute w-[386px] h-[203px] top-4 left-4">
 			<div className="relative h-full w-full">
@@ -13,16 +22,22 @@ const AnimatedLoader: React.FC = () => {
 					animate={{ opacity: 1 }}
 					transition={{ delay: 2, duration: 1 }}
 				>
-					SENDdRQtYMWaQrBroBrJ2Q53fgVuq95CV9UPGEvpCxa
+          <ScrambleText>SENDdRQtYMWaQrBroBrJ2Q53fgVuq95CV9UPGEvpCxa</ScrambleText>
 				</motion.span>
 				<motion.span
 					className="absolute top-[80px] text-[28px] left-[120px]"
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 2.5, duration: 1 }}
+					initial="hidden"
+					animate="visible"
+					transition={{ delay: 2.5, duration: 1, staggerChildren: 0.1 }}
+          aria-hidden
 				>
-					SENDING IT
-				</motion.span>
+          <span className="sr-only">SENDING IT</span>
+          {"SENDING IT".split("").map((char, index) => (
+            <motion.span variants={textStaggerAnimation} key={index}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.span>
 			</div>
 			<motion.svg
 				width="386"
@@ -125,7 +140,7 @@ const AnimatedLoader: React.FC = () => {
 							fillOpacity="0.8"
 							variants={{
 								hidden: { pathLength: 0 },
-								visible: { pathLength: 1 },
+								visible: { pathLength: 1, opacity: [0, 0, 0, 0.2, 1, 0.5, 0.2, 0.7, 0.3, 0.6, 1, 1, 1], },
 							}}
 							transition={{ duration: 1, ease: "linear" }}
 						/>
