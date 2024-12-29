@@ -11,6 +11,13 @@ const EstimatedTime = () => {
 					alt="estimated-time"
 					className="z-10"
 				/>
+        <Image
+          src="/estimated-time-decorators.svg"
+          alt="estimated-time-decorators"
+          width={416.31}
+          height={204.89}
+          className="absolute top-24 left-36 h-18 w-auto z-0"
+        />
 			</div>
 		</div>
 	);

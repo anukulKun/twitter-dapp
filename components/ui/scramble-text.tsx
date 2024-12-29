@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
 const CYCLES_PER_LETTER = 2;
-const SHUFFLE_TIME = 20;
+const SHUFFLE_TIME = 15;
 const CHARS = "지옥아니면천국AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz!@#$%^&*():{};|,.<>/?";
 
 type Props = {
