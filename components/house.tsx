@@ -10,30 +10,30 @@ const House = () => {
 	useEffect(() => {
 		if (squidGameRef.current) {
 			PowerGlitch.glitch(squidGameRef.current, {
-				playMode: 'always',
-				hideOverflow: false,
-				timing: {
-					duration: 2000,
-					iterations: Infinity,
-					easing: 'ease-in-out',
-				},
-				glitchTimeSpan: {
-					start: 0.4,
-					end: 0.7,
-				},
-				shake: {
-					velocity: 15,
-					amplitudeX: 0.2,
-					amplitudeY: 0.2,
-				},
-				slice: {
-					count: 6,
-					velocity: 15,
-					minHeight: 0.02,
-					maxHeight: 0.15,
-					hueRotate: true,
-				},
-			});
+  playMode: 'always',
+  hideOverflow: false,
+  timing: {
+    duration: 3000,
+    iterations: Infinity,
+    easing: 'ease-in-out',
+  },
+  glitchTimeSpan: {
+    start: 0.5,
+    end: 0.6,
+  },
+  shake: {
+    velocity: 8,
+    amplitudeX: 0.1,
+    amplitudeY: 0.1,
+  },
+  slice: {
+    count: 3,
+    velocity: 10,
+    minHeight: 0.02,
+    maxHeight: 0.10,
+    hueRotate: true,
+  },
+});
 		}
 	}, []);
 
@@ -63,3 +63,4 @@ const House = () => {
 };
 
 export default House;
+
