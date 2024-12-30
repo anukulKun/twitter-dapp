@@ -2,7 +2,7 @@ import type React from "react";
 
 const Frame = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen w-full absolute -z-100">
+    <div className="h-[100vh] w-full absolute -z-100">
       <svg
         viewBox="0 0 760 435"
         fill="none"
