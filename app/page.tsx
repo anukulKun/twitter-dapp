@@ -16,7 +16,7 @@ export default function Home() {
 			<PoweredBy />
 			<RadarChart />
 			<AnimatedLoader />
-      <EstimatedTime />
+            <EstimatedTime />
 		</Frame>
 	);
 }
