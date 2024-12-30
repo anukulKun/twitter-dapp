@@ -40,7 +40,7 @@ const EstimatedTime = () => {
       <div className="h-full w-full relative">
         <svg width="461" height="215" viewBox="0 0 461 215" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.5" d="M350.968 49.1996H128.122V6.98993H350.968V49.1996Z" fill="#F8F8F8" fillOpacity="0.6"/>
-          <text x="135" y="35" fill="#000000" fillOpacity="1" fontSize="18" fontWeight="" fontFamily="monospace" textAnchor="start">Estimated Time</text>
+          <text x="135" y="35" fill="#000000" fillOpacity="1" fontSize="18" fontWeight="" fontFamily="monospace" textAnchor="start">PUBLIC MINT LIVE IN</text>
           <path d="M391.867 59.4239L371.811 72.5981H170.528V40.8098H391.867V59.4239Z" fill="#F8F8F8" fillOpacity="0.6"/>
           <path d="M445.415 49.397H391.867V47.4963H444.629L454.985 37.1405L442.335 20.7547H350.968V18.854H443.252L457.541 37.2716L445.415 49.397Z" fill="#F8F8F8" fillOpacity="0.6"/>
           <path d="M409.694 19.8367L399.273 9.54645H350.968V7.64569H400.059L411.005 18.4603L409.694 19.8367Z" fill="#F8F8F8" fillOpacity="0.6"/>

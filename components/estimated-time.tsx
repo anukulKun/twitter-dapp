@@ -60,7 +60,7 @@ const EstimatedTime = () => {
             fontFamily="monospace"
             textAnchor="start"
           >
-            Estimated Time
+            PUBLIC MINT LIVE IN
           </text>
           <path
             d="M391.867 59.4239L371.811 72.5981H170.528V40.8098H391.867V59.4239Z"
