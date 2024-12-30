@@ -1,4 +1,6 @@
+""
 import AnimatedLoader from "@/components/animated-loader";
+import BlueBox from "@/components/BlueBox";
 import CyberLoader from "@/components/cyber-loader";
 import EstimatedTime from "@/components/estimated-time";
 import Frame from "@/components/frame";
@@ -6,17 +8,20 @@ import House from "@/components/house";
 import PoweredBy from "@/components/powered-by";
 import PrizeWrap from "@/components/prize-wrap";
 import RadarChart from "@/components/radar-chart";
+import Model from "@/components/Model";
 
 export default function Home() {
 	return (
 		<Frame>
 			<CyberLoader />
+			<BlueBox/>
 			<PrizeWrap />
 			<House />
 			<PoweredBy />
 			<RadarChart />
 			<AnimatedLoader />
             <EstimatedTime />
+			<Model/>
 		</Frame>
 	);
 }
