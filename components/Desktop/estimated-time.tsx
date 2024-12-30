@@ -5,36 +5,36 @@ import Image from 'next/image'
 
 const EstimatedTime = () => {
   const [rotation, setRotation] = useState(0)
-  const [timeLeft, setTimeLeft] = useState('')
+  // const [timeLeft, setTimeLeft] = useState('')
 
-  useEffect(() => {
-    const rotationInterval = setInterval(() => {
-      setRotation((prevRotation) => (prevRotation + 6) % 360)
-    }, 1000)
+  // useEffect(() => {
+  //   const rotationInterval = setInterval(() => {
+  //     setRotation((prevRotation) => (prevRotation + 6) % 360)
+  //   }, 1000)
 
-    const countdownInterval = setInterval(() => {
-      const now = new Date()
-      const targetDate = new Date('2024-12-31T16:00:00')
-      const difference = targetDate.getTime() - now.getTime()
+  //   const countdownInterval = setInterval(() => {
+  //     const now = new Date()
+  //     const targetDate = new Date('2024-12-31T16:00:00')
+  //     const difference = targetDate.getTime() - now.getTime()
 
-      if (difference > 0) {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24))
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000)
+  //     if (difference > 0) {
+  //       const days = Math.floor(difference / (1000 * 60 * 60 * 24))
+  //       const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  //       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+  //       const seconds = Math.floor((difference % (1000 * 60)) / 1000)
 
-        setTimeLeft(`${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`)
-      } else {
-        setTimeLeft('00:00:00:00')
-        clearInterval(countdownInterval)
-      }
-    }, 1000)
+  //       setTimeLeft(`${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`)
+  //     } else {
+  //       setTimeLeft('00:00:00:00')
+  //       clearInterval(countdownInterval)
+  //     }
+  //   }, 1000)
 
-    return () => {
-      clearInterval(rotationInterval)
-      clearInterval(countdownInterval)
-    }
-  }, [])
+  //   return () => {
+  //     clearInterval(rotationInterval)
+  //     clearInterval(countdownInterval)
+  //   }
+  // }, [])
 
   return (
     <div className="absolute h-[204.89px] w-[416.31px] bottom-0 left-[6%] scale-50 md:scale-75 lg:scale-100">
@@ -69,7 +69,7 @@ const EstimatedTime = () => {
         
         {/* Countdown timer */}
         <div className="absolute top-[40px] left-[170px] w-[220px] h-[30px] flex items-center justify-center">
-          <div className="text-black text-lg font-mono">{timeLeft}</div>
+          <div className="text-black text-lg font-mono">{"00:00:00:00"}</div>
         </div>
         
         {/* Decorators Image */}
