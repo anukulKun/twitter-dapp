@@ -8,7 +8,7 @@ const rubikGlitch = Rubik_Glitch({
 
 const PoweredBy = () => {
 	return (
-		<div className="absolute items-center gap-5 right-[80px] z-50 bottom-[36px] flex scale-50 md:scale-75 lg:scale-100">
+		<div className="absolute items-center gap-5 right-[100px] z-50 bottom-[44px] flex scale-50 md:scale-75 lg:scale-100">
 			<div
 				className={`${rubikGlitch.className} leading-tight text-[#EAEBE4]/50 text-[29px]`}
 			>

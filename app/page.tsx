@@ -1,4 +1,5 @@
 import AnimatedLoader from "@/components/animated-loader";
+import BlueBox from "@/components/BlueBox";
 import CyberLoader from "@/components/cyber-loader";
 import EstimatedTime from "@/components/estimated-time";
 import Frame from "@/components/frame";
@@ -11,6 +12,7 @@ export default function Home() {
 	return (
 		<Frame>
 			<CyberLoader />
+			<BlueBox/>
 			<PrizeWrap />
 			<House />
 			<PoweredBy />
