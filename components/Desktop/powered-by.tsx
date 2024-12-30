@@ -44,7 +44,12 @@ const PoweredBy = () => {
 	}, []);
 
 	return (
-		<div className="absolute items-center gap-5 right-[100px] z-50 bottom-[44px] flex scale-50 md:scale-75 lg:scale-100">
+		<a 
+			href="https://sendarcade.fun/" 
+			target="_blank" 
+			rel="noopener noreferrer"
+			className="absolute items-center gap-5 right-[100px] z-50 bottom-[44px] flex scale-50 md:scale-75 lg:scale-100"
+		>
 			<div
 				ref={textRef}
 				className={`${rubikGlitch.className} leading-tight text-[#EAEBE4]/50 text-[29px]`}
@@ -67,9 +72,8 @@ const PoweredBy = () => {
 					height={40}
 				/>
 			</div>
-		</div>
+		</a>
 	);
 };
 
 export default PoweredBy;
-

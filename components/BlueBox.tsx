@@ -11,7 +11,7 @@ function BlueBox() {
 
       style={{ zIndex: 9999 }} 
     >
-		<Link href={"https://sendarcade.fun/"}>
+		<Link href={"https://magiceden.io/marketplace/squad_game"}>
         <Image
           src="/bluee.svg"
           layout="intrinsic"
