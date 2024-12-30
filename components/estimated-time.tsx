@@ -35,7 +35,7 @@ const EstimatedTime = () => {
     }
   }, [])
   return (
-    <div className="absolute h-[204.89px] w-[416.31px] bottom-[-26px] sm:bottom-0 left-[-3.5%] sm:left-[6%] scale-[40%] sm:scale-50 md:scale-75 lg:scale-100 ">
+    <div className="absolute h-[204.89px] w-[416.31px] bottom-[-26px] sm:bottom-0 left-[-3.5%] sm:left-[6%] scale-[40%] sm:scale-50 md:scale-75 lg:scale-100 pl-28 pb-96">
       <div className="h-full w-full relative  ">
         <svg
           width="461"

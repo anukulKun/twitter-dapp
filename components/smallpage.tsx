@@ -13,6 +13,7 @@ import Model from "@/components/Model";
 export default function SmallHome() {
   return (
     <Frame>
+    <div className="pb-10">
       <div className="sm:block" >
         <CyberLoader />
       </div>
@@ -40,6 +41,7 @@ export default function SmallHome() {
       <div>
         <Model />
       </div>
+    </div>
     </Frame>
   );
 }
