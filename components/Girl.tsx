@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <main className="">
       <div
-        className="absolute top-32" 
+        className="absolute top-32 -z-20" 
         style={{
           transform: "scale(0.7)",
           transformOrigin: "center",
         }}
       >
    
-        <div className="relative z-10">
+        <div className="relative -z-10">
           <Spline className="" scene="https://prod.spline.design/jAniXVRFrt4q0mly/scene.splinecode" />
         </div>
 
