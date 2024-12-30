@@ -44,11 +44,7 @@ const PoweredBy = () => {
 	}, []);
 
 	return (
-<<<<<<< HEAD
-		<div className="absolute items-center sm:gap-5 sm:right-[100px] left-[5px] z-50 bottom-[70px] flex scale-50 md:scale-75 lg:scale-100 ">
-=======
-		<div className="px-36 pb-20 absolute items-center sm:gap-5 sm:right-[100px] left-[19px] z-50 bottom-[44px] flex scale-50 md:scale-75 lg:scale-100 ">
->>>>>>> 792f03f59ad435acd756760af9dd8f5bca4595bc
+		<div className="px-36 pb-20 absolute items-center sm:gap-5 sm:right-[100px] left-[-60px] z-50 bottom-[30px] flex scale-50 md:scale-75 lg:scale-100 ">
 			<div
 				ref={textRef}
 				className={`${rubikGlitch.className} leading-tight text-[#EAEBE4]/50 sm:text-[29px] text-[16px]`}
