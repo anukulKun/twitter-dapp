@@ -5,7 +5,7 @@ import Home from '../components/home'
 export default function Page() {
   return (
     <>
-      <div className='block md:hidden'>
+      <div className='block md:hidden overflow-hidden'>
         <SmallHome />
       </div>
       <div className='hidden md:block'>
