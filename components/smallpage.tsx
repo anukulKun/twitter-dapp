@@ -13,7 +13,7 @@ import Model from "@/components/Model";
 export default function SmallHome() {
   return (
     <Frame>
-      <div className="" >
+      <div className="sm:block" >
         <CyberLoader />
       </div>
       <div>

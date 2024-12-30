@@ -14,13 +14,13 @@ import Model from "@/components/Desktop/Model";
 export default function Home() {
   return (
     <Frame>
-      <div className="" >
+      <div>
         <CyberLoader />
       </div>
       <div>
         <BlueBox />
       </div>
-      <div className="sm:block hidden">
+      <div>
         <PrizeWrap />
       </div>
       <div>
@@ -29,7 +29,7 @@ export default function Home() {
       <div>
         <PoweredBy />
       </div>
-      <div className="sm:hidden block">
+      <div>
         <RadarChart />
       </div>
       <div>
