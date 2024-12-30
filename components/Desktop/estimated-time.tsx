@@ -1,10 +1,9 @@
 'use client'
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 const EstimatedTime = () => {
-  const [rotation, setRotation] = useState(0)
+  const rotation = 0;
   // const [timeLeft, setTimeLeft] = useState('')
 
   // useEffect(() => {
