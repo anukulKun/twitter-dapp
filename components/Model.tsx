@@ -3,7 +3,7 @@ import Girl from "../components/Girl";
 
 function Model() {
   return (
-    <div>
+    <div className="z-[9999]">
       <Girl />
     </div>
   );

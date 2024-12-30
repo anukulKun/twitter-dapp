@@ -15,12 +15,12 @@ export default function Home() {
 		<Frame>
 			<CyberLoader />
 			<BlueBox/>
-			<PrizeWrap />
+			{/* <PrizeWrap /> */}
 			<House />
-			<PoweredBy />
-			<RadarChart />
-			<AnimatedLoader />
-            <EstimatedTime />
+			{/* <PoweredBy /> */}
+			{/* <RadarChart /> */}
+			{/* <AnimatedLoader /> */}
+            {/* <EstimatedTime /> */}
 			<Model/>
 		</Frame>
 	);
